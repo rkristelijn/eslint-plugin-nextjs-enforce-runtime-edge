@@ -14,5 +14,5 @@ you can link the project and test inside your own project
 - configure the plugin in your client project like in [main README.md](../README.md)
 
 cleaning up:
-- `npm unlink eslint-plugin-nextjs-enforce-runtime-edge`
+- `npm unlink --global eslint-plugin-nextjs-enforce-runtime-edge`
 - `npm ls --global | grep eslint-plugin-nextjs-enforce-runtime-edge` - check if the unlink was successfull
