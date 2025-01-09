@@ -1,0 +1,50 @@
+{
+  "name": "eslint-plugin-nextjs-enforce-runtime-edge",
+  "description": "ESLint plugin to enforce runtime edge for Next.js for Cloudflare Pages",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "keywords": [
+    "ESLint",
+    "Next.js",
+    "Cloudflare Pages",
+    "Edge"
+  ],
+  "main": "index.js",
+  "eslintConfig": {
+    "extends": [
+      "plugin:enforce-runtime-edge/recommended"
+    ]
+  },
+  "author": "Remi Kristelijn",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rkristelijn/eslint-plugin-nextjs-enforce-runtime-edge"
+  },
+  "peerDependencies": {
+    "eslint": "^9.17.0"
+  },
+  "devDependencies": {
+    "esbuild-jest": "^0.5.0",
+    "eslint-rule-tester": "^2.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)+(spec|test).[tj]s?(x)",
+      "**/test.mjs"
+    ],
+    "transform": {
+      "^.+\\.mjs$": [
+        "esbuild-jest",
+        {
+          "target": "esnext"
+        }
+      ]
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!eslint-rule-tester)"
+    ]
+  }
+}
