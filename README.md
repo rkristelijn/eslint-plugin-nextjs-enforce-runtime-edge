@@ -15,14 +15,14 @@ Install the plugin via npm:
 ## Usage
 
 ### Configuration for .cjs
-	1.	Import the plugin in your eslint.config.cjs file:
+1.	Import the plugin in your eslint.config.cjs file:
 
 ```js
 const enforceRuntimeEdgeRule = require('eslint-plugin-nextjs-enforce-runtime-edge');
 ```
 
 
-	2.	Add the configuration to your ESLint rules:
+2.	Add the configuration to your ESLint rules:
 ```js
 module.exports = [
   // Other rules or base configurations...
@@ -47,13 +47,13 @@ module.exports = [
 ### Configuration for .mjs
 
 If you’re using an .mjs setup for your ESLint configuration:
-	1.	Import the plugin dynamically:
+1.	Import the plugin dynamically:
 
 ```ts
 import enforceRuntimeEdgeRule from 'eslint-plugin-nextjs-enforce-runtime-edge';
 ```
 
-	2.	Add the configuration to your ESLint rules:
+2.	Add the configuration to your ESLint rules:
 
 ```ts
 export default [
