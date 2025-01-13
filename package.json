@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-nextjs-enforce-runtime-edge",
   "description": "ESLint plugin to enforce runtime edge for Next.js for Cloudflare Pages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "test": "npx jest"
   },
